@@ -1,0 +1,112 @@
+Javascript course
+
+##1 intro
+to add script in html:
+<script>
+	alert("this is an alert");
+</script>
+or:
+<script src="intro.js"></script>
+Recomendacion:
+agregarlo como src y al final de body para que lo cargue al final de a pagina 
+
+
+##2 variables
+
+var nombreVariable
+propmpt caja de texto con input similar a un JOption Input en Java
+Ej: <script>prompt("Ingresa tu nombre","Valor");</script>
+para mostrar datos y verificar en la pagina podemos utilizar
+Alert o document.write(var); o consolo.log("texto prueba")
+Para console.log es necesario abrir el inspeccionador de elementos
+de nuestro navegador 
+tip: para duplicar linea de codigo: Shift + Alt + Down/Up
+
+
+##3 tipos de datos
+
+numericos: no es necesario especificar que tipo de numero queremos asignarle a nuestra variable, basta con colocar var y javascript detectara que tipo de dato numerico sera almacenado (integer o float)
+string: en javascript un salto de linea es \n, pero la usar document.write() en un </script> al ser un metodo de escritura html para hacer el salto de linea debe ser el salto de linea html osea <br> para un salto de linea en javascript con document.write() seria:
+Ej: <script>document.write("Hola mi nombre es: " + "<br> + nombre");</script>
+Dos formas de agregar comillas en un string "" en javascript son
+1. document.write(" \" Nicola Di Candia \" ");  antecedido del \ lo que queramos exceptuar ene ste caso las comillas "
+2. document.write(' "Nicola Di Candia" '); reemplazando comillas externas del texto por comillas unitarias ' '
+objetos:
+var objeto = {
+color: "Black",
+size: 12
+}
+boolean: var boolean = false;
+Undefined: var nicola; no tiene definido que tipo de var es
+Null: var num2 = 1; num2= null finalizamos la variable
+NaN: Valor no valido 
+Ej: var nombre = Nicola; console.log(nombre * 2);
+
+
+##4 Arrays
+
+arreglos: Se declaran 
+var nombreArray = [];
+var amigos = ["carlos", "andres", "santiago"];
+		 0	    1	       2
+console.log(Mi amigo: + amigos[2] + " es calidoso")
+var amigos = ["Carlos"]
+//Agregar al final
+amigos[amigos.length] = "Nuevo Amigo"  or
+amigos.push("Nuevo Amigo+");
+//quitar del final 
+amigos.pop();
+
+##5 Arrays Properties
+//Concatenar dos arrays
+var arr1 = [1, 2, 3];
+var arr2 = [4, 5, 6];
+var arr3 = arr1.concat(arr2);
+arr3 = [1, 2, 3, 4, 5, 6]
+//Join agregar separadores a la hora de imprimir
+document.write(amigos.join(" / "));
+Ordenar: array.sort();
+Descendente: array.reverse();
+
+
+##6 Condicionales
+funcionan igual que en java...
+Topic: === para validar que son iguales Y del mismo tipo 
+Ej: edad = 18
+if(edad === "18"){
+	false;
+}else{ true;
+
+##7 y 8 Loops
+a diferencia de java no se coloca int a la variable i
+//FOR
+for (i=0; i<= 100; i++){
+	console.log(i);
+}
+//WHILE
+while(condition){
+   </code>
+}
+//DO WHILE
+do{
+ </code>
+  }while(condition)
+
+##9 Functions
+function plus(n1, n2){
+  return n1 + n2;
+}
+
+##10 Forms and Functions
+para crear un formulario:
+<form action="">
+    <input type="text" id="numero1">
+    <input type="text" id="numero2">
+</form>
+
+
+
+
+
+
+
