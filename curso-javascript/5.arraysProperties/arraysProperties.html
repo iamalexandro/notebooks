@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arrays Properties</title>
+</head>
+<body>
+    <script>
+        document.write("Chapter 5: Array Properties<br>")
+        var amigos = ["Carlos", "Andres", "Jose"]; 
+        document.write("<br>Tienes " + amigos.length + "        amigos<br>");
+        //agregar al final con .length
+        //amigos[amigos.length] = "Abdul";
+        //amigos[amigos.length] = "Albert";
+        
+        //PUSH: agregar al final con .push (recomendado)
+        amigos.push("Abdul", "Albert");
+
+        //POP: Eliminar el ultimo (albert)
+        amigos.pop();
+
+        document.write("Amigos: <br>");
+        document.write(amigos[0]+ "<br>");
+        document.write(amigos[1]+ "<br>");
+        document.write(amigos[2]+ "<br>");
+        document.write(amigos[3]+ "<br>");
+        
+        //Concatenar dos arrays amigos y amigos2
+        var amigos2 = ["Raphael", "Santiago", "Felipe"];
+        var amigos3 = amigos.concat(amigos2);
+
+        document.write("<br>Amigos2: <br>");
+        document.write(amigos2[0]+ "<br>");
+        document.write(amigos2[1]+ "<br>");
+        document.write(amigos2[2]+ "<br>");
+
+        document.write("<br>Amigos3: " + amigos3);
+
+        //JOIN: agregar separadores
+
+        document.write("<br><br>Ejemplo JOIN: (Separadores)");
+        document.write("<br>Amigos1: " + amigos.join(" / "));
+        document.write("<br>Amigos2: " + amigos2.join(" / "));
+        document.write("<br>Amigos3: " + amigos3.join(" / "));
+
+        //Forma recomendada
+        amigos = amigos.join(" / ");
+        document.write("<br><br>Metodo recomendado: <br>" + amigos);
+
+        //Ordenamiento con Sort y Reverse
+        document.write("<br><br>Ordenamientos")
+        var desordenados = ["Bobby", "Carl","Anastasia"]
+        document.write("<br>Nombres desordenados: " + desordenados.join(" / "));
+        var ordenados = desordenados.sort();
+        document.write("<br>Nombres ordenados: " + ordenados.join(" / "));
+        var descendente = ordenados.reverse();
+        document.write("<br>Nombres ordenados descendentemente: " + descendente.join(" / "));
+
+        //Ordenamientos con numeros
+        var ndesordenados = [4, 2, 1, 3];
+        document.write("<br><br>Numeros desordenados: " + ndesordenados.join(" / "));
+        var nordenados = ndesordenados.sort();
+        document.write("<br>Numeros ordenados: " + nordenados.join(" / "));
+        var ndescendente = nordenados.reverse();
+        document.write("<br>Numeros ordenados descendentemente: " + ndescendente.join(" / "));
+
+    </script>
+        
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercise Forms and Function</title>
+</head>
+<body>
+    <script>
+        document.write("Chapter 10: Forms and Function Excercise")
+        document.write("<br><br>Formulario");
+    </script>
+    <form action="">
+        <input type="text" id="numero1">
+        <input type="text" id="numero2">
+        <input type="button" value="sumar" onclick="alert('resultado: '+suma(2,1));">
+    </form>
+
+    <script>
+        document.write("<br>");
+        var suma = function(n1, n2){
+            var n1 = parseInt(document.getElementById("numero1").value); 
+            var n2 = parseInt(document.getElementById("numero2").value);
+            var result = n1 + n2;
+            return result;
+        }
+    </script>
+</body>
+</html>
