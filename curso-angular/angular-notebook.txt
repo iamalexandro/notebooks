@@ -1,1 +1,37 @@
 CURSO ANGULAR 
+
+- Introduccion (Typescript)
+
+_____________________________________________________________________
+
+Cap 10 (Var y Let)
+nota: let funciona de forma que si creamos un let dentro de un loop este se diferencia al creado por fuera, mientras que con var si creamos dos variables tipo var una dentro y una fuera del loop con el mismo nombre las tomaria como una, afectando ambas por igual.
+
+Ejemplo VAR:
+var mensaje = "hola";
+if (true){
+    var mensaje="adios";
+}
+console.log(mensaje); ---------->output = adios
+
+Ejemplo LET:
+let mensaje = "hola";
+
+if (true){
+    let mensaje="adiós";
+}
+console.log(mensaje); ---------->output = hola
+
+constantes (const) 
+*se declaran en mayuscula como una buena practica
+	Ej const OPCIONES = "todas";
+*al ser creadas obligatoriamente deben ser inicializadas
+*nunca podran ser cambiadas una vez inicializadas
+*tienen un funcionamiento similar al LET con respecto a los loops y otros bloques como funciones.
+
+_____________________________________________________________________
+
+
+
+
+ 
