@@ -31,7 +31,17 @@ constantes (const)
 
 _____________________________________________________________________
 
-cap 13 
+cap 13 Tipos de variables
+String = cadena de texto
+number = numero entero o decimal
+boolean = booleano (true/false)
+Date = Fecha (mes-dia-ano)
+any = cualquier tipo puede cambiarse su valor en cualquier momento
 
+sintaxis de un objeto con atributos
+let spiderman = {
+    nombre:"Peter",
+    edad:26
+}
 
  

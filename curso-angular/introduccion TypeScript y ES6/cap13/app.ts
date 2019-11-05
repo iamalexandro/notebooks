@@ -1,6 +1,6 @@
-//cap 13 
+//cap 13 tipos de variables
 let nombre:string = "nicola";
-let edad:number = 21;
+let edad:number = 21.2;
 let booleano:boolean = true;
 
 let hoy: Date = new Date('11/04/2019');
