@@ -1,3 +1,5 @@
+//capitulo 7 configuraciones
+
 function saludar(nombre:String) {
     console.log("Hola " + nombre.toUpperCase());
 }
