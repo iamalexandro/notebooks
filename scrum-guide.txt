@@ -1,0 +1,57 @@
+SCRUM - GUIDE
+
+Scrum: Es un marco de trabajo para el desarrollo y el mantenimiento de productos complejos.
+Creadores: Ken Schwaber y Jeff Sutherland.
+Ligero, fácil de entender y extremadamente difícil de llegar a dominar.
+consiste en: equipos scrum, roles, eventos, artefactos y reglas asociadas.
+Tres pilares de los procesos empíricos: transparencia, inspección y adaptación.
+
+Scrum describe 4 eventos formales:
+Reunionde Planificación de Sprint 
+Scrum Diario
+Revisionismos de Sprint
+Retrospectiva del Sprint
+__________________________________________________________________________________________________
+
+El equipo Scrum (Scrum team)
+-Consiste en: dueño del producto (Product Owner), el equipo de Desarrollo (Developement Team) y un Scrum Master
+Entregan productos de forma iterativa e incremental
+__________________________________________________________________________________________________
+
+El dueño de Producto (Product Owner): Responsable de maximizar el valor del producto y del trabajo del equipo.
+- Es la única persona responsable de gestionar la lista del producto(Product Backlog)
+Product Backlog: una lista clara del producto ordenada para alcanzar los objetivo y misiones que busca optimizar el valor del trabajo realizado por el scrum team siendo visible transparente y clara para todos.
+Nota: el dueño es responsable del backlog aunque puede delegar la creación de este a algunos miembro de scrum team.
+__________________________________________________________________________________________________
+
+- El equipo de Desarrollo (Developement Team)
+Profesionales que desempeñan el trabajo de entregar un producto "Terminado".
+Son autoorganizados solo ellos deciden como convertir tareas del backlog en incrementos de funcionalidad.
+Son multifuncionales 
+Todos son desarrolladores, no hay distinción entre títulos
+Scrum no reconoce subequipos
+La responsabilidad siempre recae sobre TODO el equipo
+- Tamaño del equipo de Desarrollo
+Minimo 3: menos de nueve disminuiría mucho la interaccióny resultan ganancias mas pequeñas.
+Maximo 9: requiéren demasiada coordinación por tanto generaría demasiada complejidad.
+__________________________________________________________________________________________________
+
+- Scrum Master: Responsable de asegurar que Scrum es entendido y adoptado. (Andres)
+Es un líder al servicio del equipo scrum, ayuda a las personas externas al equipo a entender que interacciones con el equipo pueden ser de ayuda o no. El Scrum master ayuda a modificar las interacciones para maximizar el valor creado por el equipo.
+
+- El servicio del Scrum Master al Dueño de Producto: 
+Técnicas para f¡gestionar efectivamente el backlog 
+Ayudar a entender la necesidad de contar con elementos claros y concisos en el product backlog
+Guiar al equipo en el entorno scrum respecto a las áreas donde no ha sido entendido o adoptado por completo.
+
+- El servicio del Scrum Master a la Organización
+Liderar y guiar a la organización en la adopción de Scrum, planificar la implementación de scrum, ayudar a entender y llevar a cabo scrum y el desarrollo empírico del producto, motivar cambios que incrementen la productividad del equipo.
+NOTA: Trabajar con otros Scrum Masters para incrementar la efectividad de la aplicación de Scrum en la organización.
+__________________________________________________________________________________________________
+
+Eventos de Scrum
+- predefinidos con el fin de crear regularidad y minimizar la necesidad de reuniones scrum innecesarias.
+-Todos los eventos son bloques 
+
+
+
