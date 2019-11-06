@@ -19,6 +19,7 @@ renombrar un archivo: mv file filerenamed
 ~apenas comenzar
 ver version: git --version
 generar clave ssh:git ssh-keygen
+Copiar llave: cat ~/.ssh/id_rsa.pub
 luego buscar en la ruta la clave y agregar en conf de github
 asignar nombre: git config --global user.name "name"
 asignar correo: git config --global user.email "email@service.com"
