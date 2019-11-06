@@ -1,0 +1,115 @@
+WORKING DIRECTORY........||........STAGING.........|| 
+
+git init
+git status
+
+Untracked files: Son archivos que están en nuestro Working Directory, lo que aparezca en rojo es lo que se ha modificado y hay que pasarlo al Staging.
+
+git add [archivo]: Nos agrega al archivo al staging area(el limbo) ** -A** nos agrega todos los archivos
+git rm --cached: Nos devolvemos un paso
+git rm -f [file]: Elimina el archivo por completo.
+git add -n [file]: Que no haga nada
+
+//
+
+Git commit -m [“mensaje”]: Es bueno ser descriptivos con el mensaje para saber lo que se hizo en ese commit y para informar al resto de personas.
+
+–amend: concatena nuevos cambios con cambios previos.
+
+git log: nos muestra la historia de todos los commits que hemos realizados.
+
+//
+
+git tag: nos permite agregar etiquetas a nuestros cambios.
+-a para la anotación
+-m para el mensaje
+
+-l nos muestra la lista de etiquetas
+-f para renombrar
+-d para borrar
+
+// 
+
+git log --oneline
+git log --oneline --graph
+git log -numero de los ultimos commits
+
+//
+
+git diff también funciona con los tags: compara las versiones
+v1 vs v2
+git diff 0.5 0.3
+
+//
+
+git reset --soft [SHA1]: --->desde que commit quiero quitar los cambios, si paso el commit 7, se quitan el 8 y el 9 y 10
+git reset HEAD nombrearchivo.ext --> solo quita ese archivo del stagging
+
+***Cuando aplicas reset --soft al commit numero 7, los commit 8, 9 y 10 se vuelven commits de una rama(branch) alterna a la MASTER, son borrados de la rama principal, pero puedes acceder a ellos como como una rama alterna.
+
+Para visualizar lo descrito anteriormente usar git superlog, ya que usando git log, solo puedes acceder a la rama MASTER o a la rama donde has hecho checkout.
+
+**Se debe tener en cuenta lo siguiente:
+
+1. El Working Directory no sufre cambios (los archivos locales) ya que lo que realmente se está haciendo es pasar del Repository (commits) al Staging Area (archivos añadidos con git add, por eso aparecen en verde).
+2. Es comunmente utilizado para agrupar commits recientes en un solo commit.
+3. Los commit_ID no se eliminan. A pesar de usar git reset --soft o git commit tu puedes retornar al estado original (siempre y cuando hayas guardado el commit_ID en algún lado).
+
+//
+
+git reset --mixed sha1
+
+vuelve al working directory, nos descarta cambios, eliminamos los cambios tanto del repositorio como del staging area, llevandonos al working directory
+
+// RAMAS
+Las ramas son muy importantes si quieres trabajar con un equipo y no quieres tocar la rama master para no crear conflictos,
+
+**git branch [nombre] se crea una nueva rama
+-l: listamos las ramas
+-d/-D [nombre]: borramos rama
+-m [nombre] [nombre_nuevo]: para renombrar ramas
+
+**git checkout [nombre/sha1]: Nos permite mover entre ramas y entre commits, no vamos a borrar nada. Acá es donde podemos movernos en el tiempo.
+
+git checkout -b [nombre_rama]: Nos permite crear una nueva rama sin necesidad de usar branch
+
+git checkout -f : Descarta todos los cambios que se hayan hecho en el Working Directory (o que hayan sido añadidos en el Staging Area) con base al último commit enviado.
+
+
+
+
+/*/*/*/ FORK
+el **fork **en github nos hace una copia del proyecto en nuestro perfil/repositorios para poder hacerle lo que queramos sin afectar el proyecto original.
+
+git clone [https/ssh]: siempre es recomendable en lo que se puede de usar ssh(git@github.com…) en vez de usar https ya que la primera es mucho más segura.
+
+//Crear llave SSH -- para lograr una comunicacion entre github y mi entorno local
+ ssh-keygen -t rsa -b 4096 -C "Email de github"
+/copiar llave ssh
+ cat ~/.ssh/id_rsa.pub
+
+//GIT REMOTE
+
+    git remote add [origin] [SSH/HTTPS] Conecta un repositorio con nuestro equipo local.
+    git remote -v Lista las conexiones existentes.
+    git remote remove [origin] Elimina una conexión con algún repositorio.
+El nombre origin puede cambiar es el nombre de la conexion.
+
+//GIT PULL--FETCH
+Hay dos maneras de traer mis cambios de github a mi repo local
+
+1. git fetch: descarga los cambios a una rama generalmente llamada origin/master, seguido de esto tienes que fuisonar esa rama
+
+$ git fetch origin master 
+# origin= remoto | master= rama del remoto
+# ahora tienes una rama llamada origin/master
+# que pueedes ver con 'git branch -a'
+
+$ git merge origin/master
+# si obtienes un error usar la siguiente linea
+# git merge origin/master --allow-unrelated-histories
+
+2. git pull: es como ejecutar los 2 pasos anteriores(fetch y merge) en uno solo
+
+$ git pull origin master
+
