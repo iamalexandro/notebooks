@@ -26,14 +26,14 @@ ________________________________________________________________________________
 
 - El equipo de Desarrollo (Developement Team)
 Profesionales que desempeñan el trabajo de entregar un producto "Terminado".
-Son autoorganizados solo ellos deciden como convertir tareas del backlog en incrementos de funcionalidad.
+Son auto organizados solo ellos deciden cómo convertir tareas del backlog en incrementos de funcionalidad.
 Son multifuncionales 
 Todos son desarrolladores, no hay distinción entre títulos
-Scrum no reconoce subequipos
+Scrum no reconoce sub equipos
 La responsabilidad siempre recae sobre TODO el equipo
 - Tamaño del equipo de Desarrollo
-Minimo 3: menos de nueve disminuiría mucho la interaccióny resultan ganancias mas pequeñas.
-Maximo 9: requiéren demasiada coordinación por tanto generaría demasiada complejidad.
+Mínimo 3: menos de nueve disminuiría mucho la interacción y resultan ganancias mas pequeñas.
+Maximo 9: requieren demasiada coordinación por tanto generaría demasiada complejidad.
 __________________________________________________________________________________________________
 
 - Scrum Master: Responsable de asegurar que Scrum es entendido y adoptado. (Andres)
@@ -50,8 +50,51 @@ NOTA: Trabajar con otros Scrum Masters para incrementar la efectividad de la apl
 __________________________________________________________________________________________________
 
 Eventos de Scrum
-- predefinidos con el fin de crear regularidad y minimizar la necesidad de reuniones scrum innecesarias.
--Todos los eventos son bloques 
+- Predefinidos con el fin de crear regularidad y minimizar la necesidad de reuniones scrum innecesarias.
+- Todos los eventos son bloques (time-boxes)
+- La duración de un sprint es fija. 
+Sprint (CONTIENE) eventos = sprint es un contenedor cada evento (tarea) se puede inspeccionar y adaptar
+ y son creados con el objetivo de tener transparencia e inspección la falta de eventos tiene como resultado la escasez de transparencia evitando la posibilidad de inspección y adaptación.
+__________________________________________________________________________________________________
 
+El Sprint 
+- Es el corazón del Scrum, un bloque de tiempo (time-box) de un mes o menos  durante el cual se crea un un incremento de producto "terminado" funcional.
+Los Sprints contienen y consisten: 
+Reunión de la reunión de la planificación del Sprint (Sprint Planning Meeting)
+Los Scrum Diarios (Daily Scrums)
+El trabajo de Desarrollo,
+La Revisión del Sprint (Sprint Review)
+Retrospectiva del Sprint (Sprint Retrospective)
 
+Durante el Sprint: 
+No se realizan cambios que afecten el (Sprint Goal)
+Los objetivos de calidad no disminuyen
+El alcance puede ser clarificado y renegociado entre el dueño de producto y el equipo
+
+Cada Sprint puede considerarse un proyecto con un horizonte (no mayor a un mes).
+__________________________________________________________________________________________________
+
+Cancelación de un Sprint 
+- Puede ser cancelado antes de que el bloque de tiempo llegue a su fin.
+- Solo el dueño del producto puede cancelar un Sprint 
+- Puede cancelarlo bajo la influencia del equipo o del Scrum Master
+- Al ser cancelado un sprint se revisan todos los elementos del backlog que se hayan completado y terminado en caso de que una parte del trabajo es potencialmente entregadle el producto owner lo acepta.
+- Las cancelaciones consumen recursos y son poco comunes y traumáticas.
+
+__________________________________________________________________________________________________
+
+Reunión de Planificación de Sprint (Reunión de Planificación)
+
+- En dicha reunión se establece el trabajo a realizar durante un sprint, este trabajo lo realiza el equipo scrum en conjunto.
+- Puede llegar 8 horas para un sprint de un mes, para sprints mas cortos se acorta mas el tiempo y el scrum master enseña al equipo scrum a mantenerse dentro del bloque de tiempo (time-box).
+Reponde las preguntas: ¿que puede entregarse? ¿Como se conseguirá?
+
+- Tema 1 ¿Que puede ser terminado en este sprint?
+El equipo de desarrollo trabaja para proyectar la funcionalidad, el dueño de producto discute el objetivo los elementos de la lista de producto que en caso de completarse lograrían el objetivo del Sprint.
+Los componentes a tener en cuenta son: lista de producto, incremento del producto, capacidad proyectada del equipo para el sprint, rendimiento del equipo en el pasado sprint.
+NOTA: Solo el equipo puede evaluar que es capaz de lograr durante un sprint.
+
+- Tema 2 ¿Cómo se conseguirá completar el trabajo seleccionado?
+Una vez seleccionada las tareas el equipo decide como construir la función para crear un incremento del producto "terminado"
+Sprint Backlog = lista de tareas pendientes para terminar el Sprint 
 
