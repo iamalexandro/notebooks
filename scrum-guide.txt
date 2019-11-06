@@ -96,5 +96,13 @@ NOTA: Solo el equipo puede evaluar que es capaz de lograr durante un sprint.
 
 - Tema 2 ¿Cómo se conseguirá completar el trabajo seleccionado?
 Una vez seleccionada las tareas el equipo decide como construir la función para crear un incremento del producto "terminado"
-Sprint Backlog = lista de tareas pendientes para terminar el Sprint 
+Sprint Backlog = lista de tareas pendientes para terminar el Sprint.
+El equipo de desarrollo comienza por el diseño y el trabajo necesario para convertir una lista en un incremento de producto funciona.
+El equipo podría tambier invitar a otras personas a la reunión con el fin de asesoría.
+Al final el equipo debe explicar al Dueño de Producto y al Scrum Master cómo trabajaran como un equipo autoorganizado para lograr el Objetivo del Sprint.
 
+__________________________________________________________________________________________________
+
+Objetivo del Sprint (Sprint Goal)
+Es una meta establecida para el sprint que pueda ser alcanzada mediante el backlog.
+Es creado durante la reunión de la planificación del sprint
