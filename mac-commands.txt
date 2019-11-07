@@ -1,0 +1,9 @@
+Comandos Mac
+________________________________________________________
+
+Fn + delete = Suprimir
+Command + Shift + F3 = Mostrar Escritorio
+Command + h = minimizar ventana 
+Alt + 2 = @
+Mayus + Command + 5 = cap de pantalla
+Commands + q = cerrar programa 
