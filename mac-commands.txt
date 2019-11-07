@@ -7,3 +7,4 @@ Command + h = minimizar ventana
 Alt + 2 = @
 Mayus + Command + 5 = cap de pantalla
 Commands + q = cerrar programa 
+control + shift + expulsar = bloquear
