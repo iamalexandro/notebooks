@@ -1,0 +1,25 @@
+PHP NOTEBOOK
+
+dentro del body de un html
+código php: 
+<?php 
+   
+?>
+//comentarios 
+/*comentario de  
+  varias 
+  lineas*/
+
+variables: 
+$ + nombreVariable para todo tipo (como JS)
+ej= $variable
+para concatenar: echo "hola $name";
+o también: echo "hola " . $name
+el punto reemplaza al convencional + 
+
+para saber el tipo de variable usamos
+gettype($name)
+output: nicola
+
+constantes(buena practica declarar en mayus)
+define(NOMBRE, 'nicola');
