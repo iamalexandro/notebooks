@@ -37,6 +37,7 @@ agregar al staging area: git add . (agrega todos)
 enlazar con un repositorio remoto: git remote add origin + claveSsh
 hacer commit: git commit -m "nombre del commit"
 subir cambios: git push -u origin master
+salir de una consulta diff: q
 
 
 
