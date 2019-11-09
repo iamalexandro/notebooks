@@ -1,0 +1,45 @@
+git notebook
+
+-commands terminal
+navegar por carpetas: cd carpeta
+hacia atras: cd ..
+crear una carpeta: mkdir nombre
+listar carpetas: ls
+limpiar terminal: clear
+crear un archivo: touch archivo.ext 
+borrar carpeta: rm carpeta
+borrar repositorio: rm -rf repositorio
+editar texto de un archivo: vim archivo.ext
+escribir al entrar: s + texto
+salir del modo edicion: esc
+guarda y salir en vim: esc + : + wq
+renombrar un archivo: mv file filerenamed
+
+-commands git
+~apenas comenzar
+ver version: git --version
+generar clave ssh:git ssh-keygen
+Copiar llave: cat ~/.ssh/id_rsa.pub
+luego buscar en la ruta la clave y agregar en conf de github
+asignar nombre: git config --global user.name "name"
+asignar correo: git config --global user.email "email@service.com"
+ver valores: git config --global --list
+
+crear un repositorio: git init nombreRepositorio
+convertir carpeta en repositorio: git init (dentro de la carpeta) 
+
+agregar al staging un archivo: git add archivo.ext
+clonar un repositorio: git clone + claveSSH del rep 
+descargar cambios y fusionar: git pull origin master
+lista de conexiones: git remote -v 
+eliminar una conexion: git remote remove + claveSsh
+agregar al staging area: git add . (agrega todos)
+enlazar con un repositorio remoto: git remote add origin + claveSsh
+hacer commit: git commit -m "nombre del commit"
+subir cambios: git push -u origin master
+salir de una consulta diff: q
+
+
+
+
+
