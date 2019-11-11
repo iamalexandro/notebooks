@@ -1,16 +1,19 @@
 PHP NOTEBOOK
 
-dentro del body de un html
-código php: 
+#CODIGO PHP
+
 <?php 
-   
-?>
+   //all code here
+?>.   ---> en caso de incrustar en html, si el archivo es .php solo basta con <?php al inicio y no es necesario cerrar la etiqueta 
+
 //comentarios 
 /*comentario de  
   varias 
   lineas*/
+________________________________________________________________________
 
-variables: 
+#VARIABLES
+
 $ + nombreVariable para todo tipo (como JS)
 ej= $variable
 para concatenar: echo "hola $name";
@@ -21,5 +24,93 @@ para saber el tipo de variable usamos
 gettype($name)
 output: nicola
 
-constantes(buena practica declarar en mayus)
-define(NOMBRE, 'nicola');
+#CONSTANTES
+
+buena practica: declarar en mayus
+  ej: define(NOMBRE, 'nicola');
+________________________________________________________________________
+
+#CONEXION base de datos desde un archivo.php
+documentación: 'https://www.php.net/manual/es/pdo.connections.php'
+
+1. cambiar el nombre de la DB en el campo dbname en el link
+2. crear 3 variables $link, $user, $pass que seran los parametros del objeto PDO
+3. el valor de link es: mysql:host=localhost;dbname=prueba (cambiar dbname)
+4. los valores de user y pass se encuentran en el localhost inicial
+5. podemos usar un echo para confirmar la conexion debajo de la instancia PDO
+________________________________________________________________________
+
+#CONSUMIR CONEXION: conexión php desde un index
+
+
+documentación: https://www.php.net/manual/es/pdostatement.fetchall.php
+- nota: el archivo index será el que se cargue inicialmente por defecto.
+
+1. añadimos la función include_once + 'archivo.php' para consumir el archivo php de la conexion
+
+2. para leer datos y consumir la base de datos usamos fetchall (revisar link) FETCHALL crea un array con la consulta.
+
+3. creamos una variable de lectura sql con la sentencia necesaria para la consulta de los datos en nuestra DB 
+	$sql_reader = 'SELECT * FROM tabla' ---> esta sentencia la 		podemos encontrar en la consola de phpMyAdmin
+	
+	es opcional, podemos pasar como parametro la sentencia sql 		directamente.
+
+4.utilizamos $gsent para la conectarnos a la DB mediante el pdo que declaramos en la conexion php con $gsent = $pdo->prepare($sql_reader /// 'SELECT * FR...') y luego lo ejecutamos con: $gsent->execute();
+
+	ej: $gsent = $pdo->($sentenciaSQL);
+	    $gsent->execute();
+
+5. Para juntar toda esa informacion en un arrayutilizamos fetchAll y la podemos guardar en una variable result
+
+	ej: $result = $gsent->fetchAll();
+	    var_dump($result); --> imprimir un array
+________________________________________________________________________
+
+# Mostrar datos en la vista (HTML)
+
+1. todo lo que agreguemos dentro del html debe estar dentro de las etiquetas php <?php ' all code here' ?>
+2. Crear foreach para recorrer el array de la consulta SQL
+
+	<? foreach ($result as $data): ?>  ---> los dos puntos son para 						      el pronto cierre del 							      foreach.
+		<?php echo $data['name']?>  
+
+	<?php endforeach ?>
+________________________________________________________________________
+
+# Agregar datos a la DB desde la vista
+
+1. Crear un formulario con method:"POST"
+2. Crear inputs dentro del form con el name="doc" o el que sea necesario para identificarlo con el php a la hora de insertar en la DB.
+3. Crear el condicional PHP que valida el POST, y crear las variables necesarias para asociar con los name de los inputs anteriormente creados
+
+	ej: if ($_POST) {
+   	 $name = $_POST['name'];
+   	 $document = $_POST['document'];
+   	 $email = $_POST['email'];
+
+4. variable de texto que guarda la sentencia SQL de INSERT
+	
+	$sql_add = 'INSERT INTO users(name,document,email)VALUES(?,?,?)';
+	
+	NOTA: en VALUES colocamos (?,?) en vez de los valores para evitar 		inyecciones en SQL y es una buena practica que recomienda 		la documentación de php.
+
+5. hacemos el insert con el apoyo del PDO y la variable recien creada que almacena nuestra instruccion SQL seguido de la ejecucion con un array que tiene los campos a agregar (recuerda que habiamos puesto los ?)
+
+	$sentencia_agregar = $pdo->prepare($sql_add);
+	$sentencia_agregar-.EXECUTE(ARRAY($name,$document,$email));
+
+	NOTA: estos parametros fueron las variables que declaramos		anteriormente dandole los valores capturados.
+
+6. header('location:index.php'); ---> este metodo de php hace que luego del post se redireccione a la direccion que ingresemos seguido de location.
+________________________________________________________________________
+
+#
+ 
+
+
+	
+
+		
+
+
+
