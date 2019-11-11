@@ -9,3 +9,4 @@ Mayus + Command + 5 = cap de pantalla
 Commands + q = cerrar programa 
 control + shift + expulsar = bloquear
 cmd + c y luego cmd + alt + v = Cortar y pegar
+control + espacio = cambiar idioma (habilitar este comando en la configuracion)
