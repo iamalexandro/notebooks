@@ -11,18 +11,18 @@ Reunionde Planificación de Sprint
 Scrum Diario
 Revisionismos de Sprint
 Retrospectiva del Sprint
-__________________________________________________________________________________________________
+_______________________________________________________________________________
 
 El equipo Scrum (Scrum team)
 -Consiste en: dueño del producto (Product Owner), el equipo de Desarrollo (Developement Team) y un Scrum Master
 Entregan productos de forma iterativa e incremental
-__________________________________________________________________________________________________
+_______________________________________________________________________________
 
 El dueño de Producto (Product Owner): Responsable de maximizar el valor del producto y del trabajo del equipo.
 - Es la única persona responsable de gestionar la lista del producto(Product Backlog)
 Product Backlog: una lista clara del producto ordenada para alcanzar los objetivo y misiones que busca optimizar el valor del trabajo realizado por el scrum team siendo visible transparente y clara para todos.
 Nota: el dueño es responsable del backlog aunque puede delegar la creación de este a algunos miembro de scrum team.
-__________________________________________________________________________________________________
+_______________________________________________________________________________
 
 - El equipo de Desarrollo (Developement Team)
 Profesionales que desempeñan el trabajo de entregar un producto "Terminado".
@@ -34,7 +34,7 @@ La responsabilidad siempre recae sobre TODO el equipo
 - Tamaño del equipo de Desarrollo
 Mínimo 3: menos de nueve disminuiría mucho la interacción y resultan ganancias mas pequeñas.
 Maximo 9: requieren demasiada coordinación por tanto generaría demasiada complejidad.
-__________________________________________________________________________________________________
+_______________________________________________________________________________
 
 - Scrum Master: Responsable de asegurar que Scrum es entendido y adoptado. (Andres)
 Es un líder al servicio del equipo scrum, ayuda a las personas externas al equipo a entender que interacciones con el equipo pueden ser de ayuda o no. El Scrum master ayuda a modificar las interacciones para maximizar el valor creado por el equipo.
@@ -47,7 +47,7 @@ Guiar al equipo en el entorno scrum respecto a las áreas donde no ha sido enten
 - El servicio del Scrum Master a la Organización
 Liderar y guiar a la organización en la adopción de Scrum, planificar la implementación de scrum, ayudar a entender y llevar a cabo scrum y el desarrollo empírico del producto, motivar cambios que incrementen la productividad del equipo.
 NOTA: Trabajar con otros Scrum Masters para incrementar la efectividad de la aplicación de Scrum en la organización.
-__________________________________________________________________________________________________
+_______________________________________________________________________________
 
 Eventos de Scrum
 - Predefinidos con el fin de crear regularidad y minimizar la necesidad de reuniones scrum innecesarias.
@@ -55,7 +55,7 @@ Eventos de Scrum
 - La duración de un sprint es fija. 
 Sprint (CONTIENE) eventos = sprint es un contenedor cada evento (tarea) se puede inspeccionar y adaptar
  y son creados con el objetivo de tener transparencia e inspección la falta de eventos tiene como resultado la escasez de transparencia evitando la posibilidad de inspección y adaptación.
-__________________________________________________________________________________________________
+_______________________________________________________________________________
 
 El Sprint 
 - Es el corazón del Scrum, un bloque de tiempo (time-box) de un mes o menos  durante el cual se crea un un incremento de producto "terminado" funcional.
@@ -72,7 +72,7 @@ Los objetivos de calidad no disminuyen
 El alcance puede ser clarificado y renegociado entre el dueño de producto y el equipo
 
 Cada Sprint puede considerarse un proyecto con un horizonte (no mayor a un mes).
-__________________________________________________________________________________________________
+_______________________________________________________________________________
 
 Cancelación de un Sprint 
 - Puede ser cancelado antes de que el bloque de tiempo llegue a su fin.
@@ -81,7 +81,7 @@ Cancelación de un Sprint
 - Al ser cancelado un sprint se revisan todos los elementos del backlog que se hayan completado y terminado en caso de que una parte del trabajo es potencialmente entregadle el producto owner lo acepta.
 - Las cancelaciones consumen recursos y son poco comunes y traumáticas.
 
-__________________________________________________________________________________________________
+_______________________________________________________________________________
 
 Reunión de Planificación de Sprint (Reunión de Planificación)
 
@@ -101,7 +101,7 @@ El equipo de desarrollo comienza por el diseño y el trabajo necesario para conv
 El equipo podría tambier invitar a otras personas a la reunión con el fin de asesoría.
 Al final el equipo debe explicar al Dueño de Producto y al Scrum Master cómo trabajaran como un equipo autoorganizado para lograr el Objetivo del Sprint.
 
-__________________________________________________________________________________________________
+_______________________________________________________________________________
 
 Objetivo del Sprint (Sprint Goal)
 Es una meta establecida para el sprint que pueda ser alcanzada mediante el backlog.
