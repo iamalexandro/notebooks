@@ -66,7 +66,7 @@ documentación: https://www.php.net/manual/es/pdostatement.fetchall.php
 	    var_dump($result); --> imprimir un array
 ________________________________________________________________________
 
-# Mostrar datos en la vista (HTML)
+# MOSTRAR DATOS en la vista (HTML)
 
 1. todo lo que agreguemos dentro del html debe estar dentro de las etiquetas php <?php ' all code here' ?>
 2. Crear foreach para recorrer el array de la consulta SQL
@@ -77,7 +77,7 @@ ________________________________________________________________________
 	<?php endforeach ?>
 ________________________________________________________________________
 
-# Agregar datos a la DB desde la vista
+# AGREGAR DATOS DB from view
 
 1. Crear un formulario con method:"POST"
 2. Crear inputs dentro del form con el name="doc" o el que sea necesario para identificarlo con el php a la hora de insertar en la DB.
@@ -104,8 +104,9 @@ ________________________________________________________________________
 6. header('location:index.php'); ---> este metodo de php hace que luego del post se redireccione a la direccion que ingresemos seguido de location.
 ________________________________________________________________________
 
-#
- 
+# MODIFICAR DATOS DB
+
+
 
 
 	
