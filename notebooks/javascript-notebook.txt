@@ -13,14 +13,31 @@ agregarlo como src y al final de body para que lo cargue al final de a pagina
 
 ##2 variables
 
-var nombreVariable
+var nombreVariable (no recomendado) (let si)
+
 propmpt caja de texto con input similar a un JOption Input en Java
 Ej: <script>prompt("Ingresa tu nombre","Valor");</script>
 para mostrar datos y verificar en la pagina podemos utilizar
-Alert o document.write(var); o consolo.log("texto prueba")
+
+Alert o document.write(var); o console.log("texto prueba")
 Para console.log es necesario abrir el inspeccionador de elementos
 de nuestro navegador 
+
 tip: para duplicar linea de codigo: Shift + Alt + Down/Up
+concatenar texto: + ej --> Hola + ${name};
+
+* Template Strings -> Interpolacion (`hola ${name}`)
+
+Las Template Strings utilizan las comillas invertidas o backticks (` `) para delimitar sus contenidos, en vez de las tradicionales comillas simples o dobles de las cadenas de texto normales. Así que este es un ejemplo de cómo definir una Template String:
+
+Una de las mejores características de las Template Strings es la interpolación de cadenas. En pocas palabras, la interpolación permite utilizar cualquier expresión válida de JavaScript (como por ejemplo la suma de dos variables) dentro de una cadena y obtener como resultado la cadena completa con la expresión evaluada.
+
+Las partes variables de una Template String se denominan placeholders y utilizan la sintaxis ${ } para diferenciarse del resto de la cadena. Ejemplo:
+
+// Sustitución simple de cadenas
+var nombre = "Juan";
+console.log(`¡Hola ${nombre}!`);
+// resultado => "¡Hola Juan!"
 
 
 ##3 tipos de datos
@@ -81,8 +98,10 @@ if(edad === "18"){
 a diferencia de java no se coloca int a la variable i
 //FOR
 for (i=0; i<= 100; i++){
-	console.log(i);
+	console.log(i); continue/break
 }
+NOTA: continue se salta esa iteracion
+      break rompe el flujo y se sale del ciclo
 //WHILE
 while(condition){
    </code>
@@ -92,10 +111,74 @@ do{
  </code>
   }while(condition)
 
+NOTA: Scope (ambito) -> contexto que pertenece a un nombre dentro de un programa, Esto sirve para que se pueda volver a definir una variable con un mismo nombre en diferentes partes del programa sin que haya conflictos entre ellos.
+Si declaras una variable dentro de un bloque esa variable no existira nunca fuera de ese bloque.
+
+____________________________________________________________________
+
 ##9 Functions
 function plus(n1, n2){
   return n1 + n2;
 }
+
+NOTA: Operador ternario
+
+let adult = age >= 18 		--> condicional
+	  ? 'You are adult' 		--> valor si es true
+	  : 'You are a child'	--> valor si es falso
+
+* Funciones declaradas como const (Buena practica)
+
+	ej: const saludar = (persona) => {	
+		console.log('Hello + ${persona}')
+	}
+
+* Funcion de Flecha -> para funciones de una linea
+	
+	ej: const sumar = (a,b) => a + b 
+
+* Parametros y argumentos
+Parametro -> son las variables que declaramos con nuestra funcion
+Argumento -> el valor que toma esa variable al ejecutar la funcion 
+
+* VALORES POR DEFECTO 
+const saludar = (persona = 'visitante' , sexo = 'm'){
+	return `hola ${persona}` ---> hola visitante
+}
+
+* Parametros REST (spread operator [...] ) -> recibir indeterminada cantidad de argumentos
+
+eje:  const sumarTodos = (...numeros) => {
+		
+		console.log(numeros)
+	
+	}
+
+* Funciones: Ciudadanos de primera clase -> es un VALOR
+
+- Pueden ser almacenadas en variables o constantes
+- Pueden ser pasadas como argumentos de otra funcion
+- Pueden ser retornadas por otra funcion
+- Pueden tener metodos o propiedades
+
+* Base de clousure function que retornan functions 
+
+ej: 	const sumar2 = (x) => (y) => x + y;
+	let result2 = sumar2(1)(3);
+	c(`El resultado de la suma2 es: ${result2}`);
+* Tipos de Funciones 4.8
+
+- Puras: no modifican nada de fuera de su bloque (no causa efectos secundarios en el codigo)
+- Autoinvocadas: reciben enseguida los parametros y se invocan ellas mismas
+-Anonimas: funciones sin nombre como por ejemplo setTimeout
+
+* Conceptos clave -> Scope, clousure, callbacks, DOM
+- Clousure: invocacion de una funcion dentro de otra 
+- Scope: El scope es el alcance de una variable, puede ser de dos tipos, global y local.
+- Callbacks: cuando una funcion es empleada como argumento de otra
+- DOM (Document Object Model): 
+
+____________________________________________________________________
 
 ##10 Forms and Functions
 para crear un formulario:
@@ -103,10 +186,6 @@ para crear un formulario:
     <input type="text" id="numero1">
     <input type="text" id="numero2">
 </form>
-
-
-
-
 
 
 

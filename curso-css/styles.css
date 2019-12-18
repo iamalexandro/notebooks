@@ -1,0 +1,168 @@
+/* CURSO DE CSS */
+
+
+/* vars */
+
+:root {
+    --color-title: white;
+    --color-subtitle: yellow;
+}
+
+
+/* generals styles  */
+
+body {
+    font-size: 2em;
+}
+
+.curso {
+    font-size: 2.5em;
+    background: cyan;
+    display: inline-block;
+    padding: 0.18em;
+    margin: 0em;
+}
+
+
+/* SELECTOR HIJO DIRECTO 2.10 */
+
+li>ul {
+    display: none;
+}
+
+li:hover ul {
+    display: block;
+}
+
+
+/* SELECTOR HERMANO SIGUIENTE 2.11 */
+
+.title-1 {
+    color: var(--color-title);
+    background: black;
+}
+
+.title-2 {
+    color: var(--color-subtitle);
+    background: black;
+}
+
+.subtitle {
+    font-size: .5em;
+    margin-top: -2em;
+}
+
+.title-1+.subtitle {
+    color: var(--color-title);
+    background: black;
+}
+
+.title-2+.subtitle {
+    color: var(--color-subtitle);
+    background: black;
+}
+
+
+/* SELECTOR HERMANO + & ~ -> (MAS Y TILDE) 2.12 */
+
+
+/* (+) detecta el hermano enseguida y (~) detecta todos los hermanos siguiente */
+
+.enabled {
+    display: none;
+}
+
+.check:checked+.enabled {
+    display: block;
+}
+
+.check:checked~.disabled {
+    display: none;
+}
+
+
+/* SELECTOR DE ATRIBUTO 2.13 */
+
+
+/* [atr="value"]{} */
+
+
+/* Empieza con -> [attr^="value"] */
+
+
+/* Termina con -> [attr$="value"] */
+
+
+/* Contiene -> [attr*="value"] */
+
+
+/* Contiene (Separado con Espacios)-> [attr~="value"] */
+
+
+/* Comienza con (mas guion)-> [attr|="value"] */
+
+[type="email"] {
+    padding: 1em;
+    margin: 2em;
+    border: 2px solid cyan;
+}
+
+[required] {
+    padding: 1em;
+    border: 2px solid red;
+}
+
+
+/* COMIENZA CON 2.14 */
+
+
+/* [href^="http"] empieza con  */
+
+
+/* a {
+    padding: 0.8em;
+    color: blue;
+    background: url(https://image.flaticon.com/icons/svg/74/74910.svg) no-repeat center right / 2rem;
+    padding-right: 1.3em;
+}
+
+[href^="/"] {
+    color: green;
+    background: none;
+} */
+
+
+/* TERMINA CON */
+
+a {
+    color: blue;
+    margin: 1em;
+}
+
+[href$=".pdf"] {
+    color: red;
+    background: url(https://image.flaticon.com/icons/svg/179/179483.svg) no-repeat right / 2rem;
+    padding-right: 3rem;
+}
+
+[href$=".mp4"] {
+    background: url(https://image.flaticon.com/icons/svg/1719/1719843.svg) no-repeat right/ 2rem;
+    padding-right: 3rem;
+}
+
+
+/* CONTIENE */
+
+[class*="button-"] {
+    padding: 1.5rem;
+    text-decoration: none;
+    color: white;
+}
+
+.button-ok {
+    background: orange;
+}
+
+.button-danger {
+    background: red;
+}
