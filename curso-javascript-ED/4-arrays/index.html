@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <title>Arrays</title>
+</head>
+
+<body>
+    <h1 style="margin-left: 1rem;">Curso de JavaScript</h1>
+    <div>
+        <h2 style="margin-left: 2rem; ">• Arrays</h2>
+        <div style="border-left: solid 2px white; margin-left: 3rem; ">
+            <h3 style="margin-left:1rem; ">• Sintaxis</h3>
+            <code style="margin-left: 2rem; ">
+            let names = ['nicola', 'duban', 'jesus', 'edward']
+        </code>
+            <h3 style="margin-left:1rem; ">• Acceder a una posicion</h3>
+            <code style="margin-left: 2rem; ">
+          names [3]  output: "edward "
+        </code>
+            <h3 style="margin-left:1rem; ">• Desestructuracion</h3>
+            <span style="margin-left:2rem; ">Iguala las posiciones del array a variables nuevas</span> <br><br>
+            <code style="margin-left: 2rem; ">
+          let [s1,s2,s3,s4] = names
+        </code>
+            <h3 style="margin-left:1rem; ">• Agregar y quitar elementos</h3>
+            <div style="border-left: solid 2px white; margin-left: 2rem; ">
+                <div class="push " style="margin-left: 1rem; ">
+                    <h4>• push</h4>
+                    <article>
+                        agregar a un array en la ultima posicion por defecto <br>
+                    </article>
+                    <code style="margin-left: 1rem; ">
+                      let nunbers [1,2,3,4] <br>
+                      numbers.push(5) -> [1,2,3,4,5]
+                    </code>
+                </div>
+                <div class="pop" style="margin-left: 1rem; ">
+                    <h4>• pop</h4>
+                    <article>
+                        quitar del array el ultimo elemento<br>
+                    </article> <br>
+                    <code style="margin-left: 1rem; ">
+                      let nunbers [1,2,3,4] <br>
+                      numbers.pop() -> [1,2,3]
+                    </code>
+                </div>
+                <div class="unshift" style="margin-left: 1rem; ">
+                    <h4>• unshift</h4>
+                    <article>
+                        agregar elemento al inicio del array<br>
+                    </article> <br>
+                    <code style="margin-left: 1rem; ">
+                      let nunbers [1,2,3,4] <br>
+                      numbers.unshift(5) -> [5,1,2,3,4]
+                    </code>
+                </div>
+                <div class="shift" style="margin-left: 1rem; ">
+                    <h4>• shift</h4>
+                    <article>
+                        elimina el primer valor del array y retorna el valor eliminado<br>
+                    </article> <br>
+                    <code style="margin-left: 1rem; ">
+                      let nunbers [1,2,3,4] <br>
+                      numbers.shift() -> [2,3,4]
+                    </code>
+                </div>
+                <div class="splice" style="margin-left: 1rem; ">
+                    <h4>• splice</h4>
+                    <article>
+                        agregar o eliminar en una posicion personalizada
+                        <br>
+                    </article> <br>
+                    <code style="margin-left: 1rem; ">
+                      .splice(startIndex, quantityDelete, value1, value2, value3) <br> <br>
+                      <article style="margin-left: 1rem; ">
+                        Agregar dos elementos en el index [2] <br>
+                      </article>
+                      <code style="margin-left: 1rem; ">
+                        let nunbers [1,2,3,4] <br>
+                          numbers.splice(2,0,9,9) -> [1,2,9,9,3,4]
+                      </code>
+                    <article style="margin-left: 1rem; ">
+                        agregar el numero 7 en el index [1] eliminando dos elementos <br>
+                    </article>
+                    <code style="margin-left: 1rem; ">
+                        let nunbers [1,2,3,4] <br>
+                          numbers.splice(1,2,7) -> [1,7,4]
+                      </code>
+                    </code>
+                    <h4>• slice</h4>
+                    <article>
+                        .slice(start,end) extrae un nuevo array los valores desde start hasta end -1. (NO MODIFICA EL ARRAY ORIGINAL)
+                        <br>
+                    </article> <br>
+                    <code style="margin-left: 1rem; ">
+                      let nunbers [1,2,3,4,5,6,7] <br>
+                      numbers.slice(2,5)  ->  3,4,5 <br> <br>
+                </div>
+                
+              </div>
+              <h3 style="margin-left:1rem; ">• Ordenar elementos de un array</h3>
+              <div style="border-left: solid 2px white; margin-left: 2rem; ">
+                <div class="sort" style="margin-left: 1rem; ">
+                  <h4>• reverse</h4>
+                  <article>
+                      • ordena inversamente el array<br>
+                  </article>
+                  <code style="margin-left: 1rem; ">
+                    'hola mama'.split('').reverse() -> ('a' 'm' 'a' 'm' '' 'a' 'l' 'o'  'h' )
+                  </code>
+                    <article>
+                        <br>• unir un array<br>
+                    </article>
+                    <code style="margin-left: 1rem; ">
+                  let array = ['h','o','l','a'] |
+                  array.join('')  -> 'hola'
+                    <article>
+                        <br>• recibir un string invertirlo y unirlo<br>
+                    </article>
+                    <code style="margin-left: 1rem; ">
+                      const reverseText = string => string.split('').reverse().join('') <br>
+                  reverseText('nicola') -> 'alocin'
+                </code>
+                    <h4>• sort (strings)</h4>
+                    <article>
+                        ordena un array (solo strings)<br>
+                    </article>
+                    <code style="margin-left: 1rem; ">
+                      let letters = ['c','d','a','b'] <br>
+                      letters.sort() -> ["a", "b", "c", "d"]
+                  </code>
+                    <h4>• sort (callback) for numbers</h4>
+                    <article>
+                        ordena un array de numeros recibiendo un callback<br>
+                    </article>
+                    <code style="margin-left: 1rem; ">
+                      let numbers = [1,2,45,12,54,23,65,98,18] <br>
+                      numbers2.sort((a,b)=>a-b) -> [1, 2, 12, 18, 23, 45, 54, 65, 98]
+                  </code>
+                </div>
+            </div>
+            <h3 style="margin-left:1rem; ">• Concatenar y transformar a string</h3>
+            <div style="border-left: solid 2px white; margin-left: 2rem; ">
+                <div class="join" style="margin-left: 1rem; ">
+                    <h4>• join</h4>
+                    <article>
+                        une las posiciones de un string y le agrega un separador en caso de usar ('') o (',')<br>
+                    </article>
+                    <code style="margin-left: 1rem; ">
+                  let array = [1,2,3,4,5]
+                  array.join('-') -> 1-2-3-4-5
+                </code>
+                </div>
+                <div class="concat" style="margin-left: 1rem; ">
+                    <h4>• concat</h4>
+                    <article>
+                        concatena 2 arrays<br>
+                    </article>
+                    <code style="margin-left: 1rem; ">
+                  let a1 = [1,2,3]
+                  let a2 = [4,5,6]
+                  a1.concat(a2) -> 1,2,3,4,5,6
+                </code>
+                </div>
+            </div>
+            <h3 style="margin-left:1rem; ">• Encontrar elementos</h3>
+            <div style="border-left: solid 2px white; margin-left: 2rem; ">
+                <div class="indexof" style="margin-left: 1rem; ">
+                    <h4>• indexOf</h4>
+                    <article>
+                        devuelve el index del argumento en el array<br>
+                    </article>
+                    <code style="margin-left: 1rem; ">
+                      array = [1,2,3,4,5]
+                      array.indexOf(4) -> 3
+                    </code>
+                </div>
+                <div class="find" style="margin-left: 1rem; ">
+                    <h4>• find(callback)</h4>
+                    <article>
+                        devuelve el valor que cumpla el callback<br>
+                    </article>
+                    <code style="margin-left: 1rem; ">
+                      array = [1,2,3,4,5]
+                      array.fin(number => number > 2)  -> 3
+                    </code>
+                </div>
+                <div class="find" style="margin-left: 1rem; ">
+                    <h4>• findIndex(callback)</h4>
+                    <article>
+                        devuelve el index que cumpla el callback<br>
+                    </article>
+                    <code style="margin-left: 1rem; ">
+                      array = [1,2,3,4,5]
+                      array.findIndex(number => number > 2) -> 2
+                    </code>
+                </div>
+            </div>
+            <h3 style="margin-left:1rem; ">• Eliminar elementos (spread operator)</h3>
+            <div style="border-left: solid 2px white; margin-left: 2rem; ">
+                <div class="set" style="margin-left: 1rem; ">
+                    <h4>• set</h4>
+                    <article>
+                        eliminar elementos duplicados y retornar el array resultante con (spread operator ...)<br>
+                    </article>
+                    <code style="margin-left: 1rem; ">
+                      array = [1,2,3,4,2,5]
+                      [...new Set(array)] -> 1,2,3,4,5
+                    </code>
+                </div>
+                <div class="functionSet" style="margin-left: 1rem; ">
+                    <h4>• function removeDuplicates</h4>
+                    <article>
+                        almacenar el set en una funcion<br>
+                    </article>
+                    <code style="margin-left: 1rem; ">
+                      let array = [1,2,3,4,4,5] <br>
+                      const removeDuplicates = array => [...new Set(array)] <br>
+                      removeDuplicates(array) -> 1,2,3,4,5
+                    </code>
+                </div>
+                <div class="mathmin" style="margin-left: 1rem; ">
+                    <h4>• Math.min()</h4>
+                    <article>
+                        retorna el valor mas bajo de un array (solo usando spread operator)<br>
+                    </article>
+                    <code style="margin-left: 1rem; ">
+                      let array = [1,2,3,4,5] <br>
+                      Math.min(...array) -> 1
+                    </code>
+                </div>
+                <div class="mathmin" style="margin-left: 1rem; ">
+                    <h4>• Math.max()</h4>
+                    <article>
+                        retorna el valor mas alto de un array (solo usando spread operator)<br>
+                    </article>
+                    <code style="margin-left: 1rem; ">
+                      let array = [1,2,3,4,5] <br>
+                      Math.max(...array) -> 5
+                    </code>
+                </div>
+
+            </div>
+
+            <h3 style="margin-left:1rem; ">• Recorrer arrays</h3>
+            <div style="border-left: solid 2px white; margin-left: 2rem; ">
+                <div class="set" style="margin-left: 1rem; ">
+                    <h4>• for of</h4>
+                    <article>
+                        muy parecido al for each de JAVA es utlizado para recorrer arreglos utilizando un alias como elemento<br>
+                    </article>
+                    <code style="margin-left: 1rem; ">
+                    ...
+                  </code>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+        <script src="scripts.js "></script>
+
+</body>
+
+</html>

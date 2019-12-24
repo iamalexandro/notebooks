@@ -38,7 +38,7 @@
 
 // Funciones = Ciudadanos de primera clase (son valores)
 
-const c = console.log;
+// const c = console.log;
 // const multiplicar = (a, b) => a * b;
 
 // c(multiplicar(2, 2));

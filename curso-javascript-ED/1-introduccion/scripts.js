@@ -16,6 +16,10 @@ let data = {
         study: 'electronic',
         guy: true
     }
+
+    var obj = function(doSomething) {
+        name
+    }
     // asignacion por valor (primitivos)
 let asig = 2;
 let asig2 = asig;
