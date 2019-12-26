@@ -1,7 +1,7 @@
 let names = ['nicola', 'duban', 'jesus', 'edward']
 let [s1, s2, s3, s4] = names
 
-console.log(s3)
+//console.log(s3)
 
 // push and pop 
 // push

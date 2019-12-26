@@ -10,27 +10,28 @@
 </head>
 
 <body>
-    <h1 style="margin-left: 1rem;">Curso de JavaScript</h1>
-    <div>
-        <h2 style="margin-left: 2rem; ">• Arrays</h2>
+    <h1 class="title" style="margin-left: 1rem;">Curso de JavaScript</h1>
+    <h2 class="title array" style="margin-left: 2rem;">• Arrays</h2>
+
+    <div class="arrays">
         <div style="border-left: solid 2px white; margin-left: 3rem; ">
-            <h3 style="margin-left:1rem; ">• Sintaxis</h3>
+            <h3 class="title" style="margin-left:1rem; ">• Sintaxis</h3>
             <code style="margin-left: 2rem; ">
             let names = ['nicola', 'duban', 'jesus', 'edward']
         </code>
-            <h3 style="margin-left:1rem; ">• Acceder a una posicion</h3>
+            <h3 class="title" style="margin-left:1rem; ">• Acceder a una posicion</h3>
             <code style="margin-left: 2rem; ">
           names [3]  output: "edward "
         </code>
-            <h3 style="margin-left:1rem; ">• Desestructuracion</h3>
+            <h3 class="title" style="margin-left:1rem; ">• Desestructuracion</h3>
             <span style="margin-left:2rem; ">Iguala las posiciones del array a variables nuevas</span> <br><br>
             <code style="margin-left: 2rem; ">
           let [s1,s2,s3,s4] = names
         </code>
-            <h3 style="margin-left:1rem; ">• Agregar y quitar elementos</h3>
+            <h3 class="title" style="margin-left:1rem; ">• Agregar y quitar elementos</h3>
             <div style="border-left: solid 2px white; margin-left: 2rem; ">
                 <div class="push " style="margin-left: 1rem; ">
-                    <h4>• push</h4>
+                    <h4 class="title">• push</h4>
                     <article>
                         agregar a un array en la ultima posicion por defecto <br>
                     </article>
@@ -40,7 +41,7 @@
                     </code>
                 </div>
                 <div class="pop" style="margin-left: 1rem; ">
-                    <h4>• pop</h4>
+                    <h4 class="title">• pop</h4>
                     <article>
                         quitar del array el ultimo elemento<br>
                     </article> <br>
@@ -50,7 +51,7 @@
                     </code>
                 </div>
                 <div class="unshift" style="margin-left: 1rem; ">
-                    <h4>• unshift</h4>
+                    <h4 class="title">• unshift</h4>
                     <article>
                         agregar elemento al inicio del array<br>
                     </article> <br>
@@ -60,7 +61,7 @@
                     </code>
                 </div>
                 <div class="shift" style="margin-left: 1rem; ">
-                    <h4>• shift</h4>
+                    <h4 class="title"> • shift</h4>
                     <article>
                         elimina el primer valor del array y retorna el valor eliminado<br>
                     </article> <br>
@@ -70,7 +71,7 @@
                     </code>
                 </div>
                 <div class="splice" style="margin-left: 1rem; ">
-                    <h4>• splice</h4>
+                    <h4 class="title">• splice</h4>
                     <article>
                         agregar o eliminar en una posicion personalizada
                         <br>
@@ -92,7 +93,7 @@
                           numbers.splice(1,2,7) -> [1,7,4]
                       </code>
                     </code>
-                    <h4>• slice</h4>
+                    <h4 class="title">• slice</h4>
                     <article>
                         .slice(start,end) extrae un nuevo array los valores desde start hasta end -1. (NO MODIFICA EL ARRAY ORIGINAL)
                         <br>
@@ -103,10 +104,10 @@
                 </div>
                 
               </div>
-              <h3 style="margin-left:1rem; ">• Ordenar elementos de un array</h3>
+              <h3 class="title" style="margin-left:1rem; ">• Ordenar elementos de un array</h3>
               <div style="border-left: solid 2px white; margin-left: 2rem; ">
                 <div class="sort" style="margin-left: 1rem; ">
-                  <h4>• reverse</h4>
+                  <h4 class="title">• reverse</h4>
                   <article>
                       • ordena inversamente el array<br>
                   </article>
@@ -126,7 +127,7 @@
                       const reverseText = string => string.split('').reverse().join('') <br>
                   reverseText('nicola') -> 'alocin'
                 </code>
-                    <h4>• sort (strings)</h4>
+                    <h4 class="title">• sort (strings)</h4>
                     <article>
                         ordena un array (solo strings)<br>
                     </article>
@@ -134,7 +135,7 @@
                       let letters = ['c','d','a','b'] <br>
                       letters.sort() -> ["a", "b", "c", "d"]
                   </code>
-                    <h4>• sort (callback) for numbers</h4>
+                    <h4 class="title">• sort (callback) for numbers</h4>
                     <article>
                         ordena un array de numeros recibiendo un callback<br>
                     </article>
@@ -144,10 +145,10 @@
                   </code>
                 </div>
             </div>
-            <h3 style="margin-left:1rem; ">• Concatenar y transformar a string</h3>
+            <h3 class="title" style="margin-left:1rem; ">• Concatenar y transformar a string</h3>
             <div style="border-left: solid 2px white; margin-left: 2rem; ">
                 <div class="join" style="margin-left: 1rem; ">
-                    <h4>• join</h4>
+                    <h4 class="title"> • join</h4>
                     <article>
                         une las posiciones de un string y le agrega un separador en caso de usar ('') o (',')<br>
                     </article>
@@ -157,7 +158,7 @@
                 </code>
                 </div>
                 <div class="concat" style="margin-left: 1rem; ">
-                    <h4>• concat</h4>
+                    <h4 class="title">• concat</h4>
                     <article>
                         concatena 2 arrays<br>
                     </article>
@@ -168,10 +169,10 @@
                 </code>
                 </div>
             </div>
-            <h3 style="margin-left:1rem; ">• Encontrar elementos</h3>
+            <h3 class="title" style="margin-left:1rem; ">• Encontrar elementos</h3>
             <div style="border-left: solid 2px white; margin-left: 2rem; ">
                 <div class="indexof" style="margin-left: 1rem; ">
-                    <h4>• indexOf</h4>
+                    <h4 class="title">• indexOf</h4>
                     <article>
                         devuelve el index del argumento en el array<br>
                     </article>
@@ -181,7 +182,7 @@
                     </code>
                 </div>
                 <div class="find" style="margin-left: 1rem; ">
-                    <h4>• find(callback)</h4>
+                    <h4 class="title">• find(callback)</h4>
                     <article>
                         devuelve el valor que cumpla el callback<br>
                     </article>
@@ -191,7 +192,7 @@
                     </code>
                 </div>
                 <div class="find" style="margin-left: 1rem; ">
-                    <h4>• findIndex(callback)</h4>
+                    <h4 class="title">• findIndex(callback)</h4>
                     <article>
                         devuelve el index que cumpla el callback<br>
                     </article>
@@ -201,10 +202,10 @@
                     </code>
                 </div>
             </div>
-            <h3 style="margin-left:1rem; ">• Eliminar elementos (spread operator)</h3>
+            <h3 class="title" style="margin-left:1rem; ">• Eliminar elementos (spread operator)</h3>
             <div style="border-left: solid 2px white; margin-left: 2rem; ">
                 <div class="set" style="margin-left: 1rem; ">
-                    <h4>• set</h4>
+                    <h4 class="title">• set</h4>
                     <article>
                         eliminar elementos duplicados y retornar el array resultante con (spread operator ...)<br>
                     </article>
@@ -214,7 +215,7 @@
                     </code>
                 </div>
                 <div class="functionSet" style="margin-left: 1rem; ">
-                    <h4>• function removeDuplicates</h4>
+                    <h4 class="title">• function removeDuplicates</h4>
                     <article>
                         almacenar el set en una funcion<br>
                     </article>
@@ -225,7 +226,7 @@
                     </code>
                 </div>
                 <div class="mathmin" style="margin-left: 1rem; ">
-                    <h4>• Math.min()</h4>
+                    <h4 class="title">• Math.min()</h4>
                     <article>
                         retorna el valor mas bajo de un array (solo usando spread operator)<br>
                     </article>
@@ -235,7 +236,7 @@
                     </code>
                 </div>
                 <div class="mathmin" style="margin-left: 1rem; ">
-                    <h4>• Math.max()</h4>
+                    <h4 class="title">• Math.max()</h4>
                     <article>
                         retorna el valor mas alto de un array (solo usando spread operator)<br>
                     </article>
@@ -247,26 +248,136 @@
 
             </div>
 
-            <h3 style="margin-left:1rem; ">• Recorrer arrays</h3>
+            <h3 class="title" style="margin-left:1rem; ">• Recorrer arrays</h3>
             <div style="border-left: solid 2px white; margin-left: 2rem; ">
-                <div class="set" style="margin-left: 1rem; ">
-                    <h4>• for of</h4>
+                <div class="forof" style="margin-left: 1rem; ">
+                    <h4 class="title">• for of</h4>
                     <article>
-                        muy parecido al for each de JAVA es utlizado para recorrer arreglos utilizando un alias como elemento<br>
+                        muy parecido al for each de JAVA es utlizado para recorrer arreglos utilizando un alias como elemento<br><br>
                     </article>
                     <code style="margin-left: 1rem; ">
-                    ...
+                      let arr = [1,2,3,4,5] <br>
+                      for(element of arr){ <br>
+                        console.log('elemento numero: ' element) <br>
+                      } -> elemento numero: 1 ... 5 <br>
+                  </code>
+                </div>
+                <div class="foreach" style="margin-left: 1rem; ">
+                    <h4 class="title">• forEach (callback)</h4>
+                    <article>
+                        recorre un array haciendo un callback que recibe dos argumentos: element, index arr.forEach(el,i)<br><br>
+                    </article>
+                    <code style="margin-left: 1rem; ">
+                      teachers = ['javier','jorge','camilo','juan'] <br>
+                      teachers.forEach((el,i) =>{
+                        console.log((i+1) + '. ' + el)
+                      })
+                  </code>
+                </div>
+                <div class="someevery" style="margin-left: 1rem; ">
+                    <h4 class="title">• metodos .some() y .every()</h4>
+                    <article>
+                        recorre un array, recibe un callback y retorna true si algun elemento cumple la condicion (some) o retorna true en caso de que todas la cumplan (every)<br><br>
+                    </article>
+                    <code style="margin-left: 1rem; ">
+                      let numbers = [1,2,3,4,5,6] <br>
+                      // existe un elemento mayor a 5 <br>
+                        numbers.some(el => el > 5)   -> true <br>
+                        //todos son mayor a 2 <br>
+                        numbers.every(el => el > 2)   -> false <br>
+                      })
                   </code>
                 </div>
             </div>
+            <h3 class="title" style="margin-left:1rem; ">• Metodos map() filter() reduce() [no odifican el array original]</h3>
+            <div style="border-left: solid 2px white; margin-left: 2rem; ">
+                <div class="map" style="margin-left: 1rem; ">
+                    <h4 class="title">• .map(callback)</h4>
+                    <article>
+                        transforma todos los elementos del array<br><br>
+                    </article>
+                    <code style="margin-left: 1rem; ">
+                      let array = [1,2,3,4,5] <br>
+                      array.map(el => el*el) -> [1, 4, 9, 16, 25] <br>
 
-
-
-
+                    </code>
+                </div>
+                <div class="filter" style="margin-left: 1rem; ">
+                    <h4 class="title">• .filter(callback)</h4>
+                    <article>
+                        filtra los elementos que cumplan con la condicion<br><br>
+                    </article>
+                    <code style="margin-left: 1rem; ">
+                      let array = [1,2,3,4,5] <br>
+                      array.filter(el => el > 2) -> [3,4,5] <br>
+                    </code>
+                </div>
+                <div class="reduce" style="margin-left: 1rem; ">
+                    <h4 class="title">• .reduce(callback)</h4>
+                    <article>
+                        reduce todos los elementos a un unico valor<br><br>
+                    </article>
+                    <code style="margin-left: 1rem; ">
+                      let array = [1,2,3,4,5] <br>
+                      array.reduce( (a,b) => a + b) -> 15 <br>
+                    </code>
+                </div>
+            </div>
 
         </div>
-        <script src="scripts.js "></script>
+    </div>
 
+    <h2 class="title objetos" style="margin-left: 2rem;">• Objetos</h2>
+    <div class="objetos">
+        <div style="border-left: solid 2px white; margin-left: 3rem; ">
+            <h3 class="title" style="margin-left:1rem; ">• Sintaxis</h3>
+            <div style="border-left: solid 2px white; margin-left: 2rem; ">
+                <div class="sintaxis" style="margin-left: 1rem; ">
+                    <h4 class="title">• es una estructura de datos</h4>
+                    <code>
+                      { <br>
+                          propiedad: valor, <br>
+                          propiedad2: valor2,<br>
+                          propiedad3: valor3,<br>
+                          metodo(){<br>
+                          //codigo del metodo <br>
+                          } <br>
+                      } <br>
+                    </code>
+                    <h4 class="title">• tiene propiedades (valores)</h4>
+                    <h4 class="title">• tiene metodos (funciones)</h4>
+                    <article>ejemplo</article> <br>
+                    <code>
+                      let perro = { <br>
+                        nombre: 'Spike',<br>
+                        edad: 3,<br>
+                        color:'negro',<br>
+                        sexo: 'macho',<br>
+                        correr(){<br>
+                         console.log(`${this.nombre} estas corriendo`)<br>
+                        }<br>
+                       } <br> <br>
+                       perro.nombre -> Spike <br>
+                       perro.correr() -> Spike esta corriendo
+
+                    </code>
+                </div>
+            </div>
+            <h3 class="title" style="margin-left:1rem; ">• Propiedades</h3>
+            <div style="border-left: solid 2px white; margin-left: 2rem; ">
+                <div class="sintaxis" style="margin-left: 1rem; ">
+                    <h4 class="title">• delete</h4>
+                    <article>
+                        borrar una propiedad de un objeto
+                    </article>
+                    <code>
+                      delete perro.edad -> true
+                    </code>
+                </div>
+            </div>
+        </div>
+
+        <script src="scripts.js "></script>
 </body>
 
 </html>
