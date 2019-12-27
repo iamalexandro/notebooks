@@ -11,3 +11,16 @@ songs.push('hello - adele')
 // pop 
 let numbers = [1, 2, 3, 4, 5]
 numbers.pop() // -> 1,2,3,4
+
+// objetos
+
+let perro = {
+    nombre: 'Spike',
+    edad: 3,
+    vacunas: true,
+    rabia: false,
+    correr() {
+        console.log(`${this.nombre} esta corriendo`)
+    },
+    feliz: true
+}
