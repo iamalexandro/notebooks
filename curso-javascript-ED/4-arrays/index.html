@@ -16,102 +16,142 @@
     <div class="arrays">
         <div style="border-left: solid 2px white; margin-left: 3rem; ">
             <h3 class="title" style="margin-left:1rem; ">• Sintaxis</h3>
-            <code style="margin-left: 2rem; ">
-            let names = ['nicola', 'duban', 'jesus', 'edward']
-        </code>
+            <div style="border-left: solid 2px white; margin-left: 2rem; ">
+                <div style="margin-left: 1rem;">
+                    <code>
+                  let names = ['nicola', 'duban', 'jesus', 'edward']
+                </code>
+                </div>
+            </div>
+
             <h3 class="title" style="margin-left:1rem; ">• Acceder a una posicion</h3>
-            <code style="margin-left: 2rem; ">
-          names [3]  output: "edward "
-        </code>
+            <div style="border-left: solid 2px white; margin-left: 2rem; ">
+                <div style="margin-left: 1rem;">
+                    <code>
+                      names [3]  output: "edward "
+                    </code>
+                </div>
+            </div>
             <h3 class="title" style="margin-left:1rem; ">• Desestructuracion</h3>
-            <span style="margin-left:2rem; ">Iguala las posiciones del array a variables nuevas</span> <br><br>
-            <code style="margin-left: 2rem; ">
-          let [s1,s2,s3,s4] = names
-        </code>
+            <div style="border-left: solid 2px white; margin-left: 2rem; ">
+                <div style="margin-left: 1rem;">
+                    <span>Iguala las posiciones del array a variables nuevas
+                    </span> <br><br>
+                    <code>
+                      let [s1,s2,s3,s4] = names
+                    </code>
+                </div>
+            </div>
             <h3 class="title" style="margin-left:1rem; ">• Agregar y quitar elementos</h3>
             <div style="border-left: solid 2px white; margin-left: 2rem; ">
                 <div class="push " style="margin-left: 1rem; ">
                     <h4 class="title">• push</h4>
-                    <article>
-                        agregar a un array en la ultima posicion por defecto <br>
-                    </article>
-                    <code style="margin-left: 1rem; ">
-                      let nunbers [1,2,3,4] <br>
-                      numbers.push(5) -> [1,2,3,4,5]
-                    </code>
+                    <div style="border-left: solid 2px white; margin-left: 1rem; ">
+                        <div style="margin-left: 1rem;">
+                            <article>
+                                agregar a un array en la ultima posicion por defecto <br><br>
+                            </article>
+                            <code style="margin-left: 1rem; ">
+                              let nunbers [1,2,3,4] <br>
+                              numbers.push(5) -> [1,2,3,4,5]
+                            </code>
+                        </div>
+                    </div>
                 </div>
                 <div class="pop" style="margin-left: 1rem; ">
                     <h4 class="title">• pop</h4>
-                    <article>
-                        quitar del array el ultimo elemento<br>
-                    </article> <br>
-                    <code style="margin-left: 1rem; ">
-                      let nunbers [1,2,3,4] <br>
-                      numbers.pop() -> [1,2,3]
-                    </code>
+                    <div style="border-left: solid 2px white; margin-left: 1rem; ">
+                        <div style="margin-left: 1rem;">
+                            <article>
+                                quitar del array el ultimo elemento<br><br>
+                            </article>
+                            <code style="margin-left: 1rem; ">
+                              let nunbers [1,2,3,4] <br>
+                              numbers.pop() -> [1,2,3]
+                            </code>
+                        </div>
+                    </div>
                 </div>
                 <div class="unshift" style="margin-left: 1rem; ">
                     <h4 class="title">• unshift</h4>
-                    <article>
-                        agregar elemento al inicio del array<br>
-                    </article> <br>
-                    <code style="margin-left: 1rem; ">
-                      let nunbers [1,2,3,4] <br>
-                      numbers.unshift(5) -> [5,1,2,3,4]
-                    </code>
+                    <div style="border-left: solid 2px white; margin-left: 1rem; ">
+                        <div style="margin-left: 1rem;">
+                            <article>
+                                agregar elemento al inicio del array<br>
+                            </article> <br>
+                            <code style="margin-left: 1rem; ">
+                              let nunbers [1,2,3,4] <br>
+                              numbers.unshift(5) -> [5,1,2,3,4]
+                            </code>
+                        </div>
+                    </div>
                 </div>
                 <div class="shift" style="margin-left: 1rem; ">
                     <h4 class="title"> • shift</h4>
-                    <article>
-                        elimina el primer valor del array y retorna el valor eliminado<br>
-                    </article> <br>
-                    <code style="margin-left: 1rem; ">
-                      let nunbers [1,2,3,4] <br>
-                      numbers.shift() -> [2,3,4]
-                    </code>
+                    <div style="border-left: solid 2px white; margin-left: 1rem; ">
+                        <div style="margin-left: 1rem;">
+                            <article>
+                                elimina el primer valor del array y retorna el valor eliminado<br>
+                            </article> <br>
+                            <code style="margin-left: 1rem; ">
+                                let nunbers [1,2,3,4] <br>
+                                numbers.shift() -> [2,3,4]
+                            </code>
+                        </div>
+                    </div>
                 </div>
                 <div class="splice" style="margin-left: 1rem; ">
                     <h4 class="title">• splice</h4>
-                    <article>
-                        agregar o eliminar en una posicion personalizada
-                        <br>
-                    </article> <br>
-                    <code style="margin-left: 1rem; ">
-                      .splice(startIndex, quantityDelete, value1, value2, value3) <br> <br>
-                      <article style="margin-left: 1rem; ">
-                        Agregar dos elementos en el index [2] <br>
-                      </article>
-                      <code style="margin-left: 1rem; ">
-                        let nunbers [1,2,3,4] <br>
-                          numbers.splice(2,0,9,9) -> [1,2,9,9,3,4]
-                      </code>
-                    <article style="margin-left: 1rem; ">
-                        agregar el numero 7 en el index [1] eliminando dos elementos <br>
-                    </article>
-                    <code style="margin-left: 1rem; ">
+                    <div style="border-left: solid 2px white; margin-left: 1rem; ">
+                        <div style="margin-left: 1rem;">
+                            <article>
+                                • agregar o eliminar en una posicion personalizada
+                                <br><br>
+                            </article>
+                            <code style="margin-left: 1rem; ">
+                              .splice(startIndex, quantityDelete, value1, value2, value3) <br> <br>
+                            </code>
+                            <article>
+                                • agregar dos elementos en el index [2] <br><br>
+                            </article>
+                            <code style="margin-left: 1rem; ">
+                              let nunbers [1,2,3,4] <br>
+                              numbers.splice(2,0,9,9) -> [1,2,9,9,3,4]
+                            </code> <br><br>
+                            <article>
+                                • agregar el numero 7 en el index [1] eliminando dos elementos <br><br>
+                            </article>
+                            <code style="margin-left: 1rem; ">
                         let nunbers [1,2,3,4] <br>
                           numbers.splice(1,2,7) -> [1,7,4]
                       </code>
-                    </code>
+
+                        </div>
+                    </div>
                     <h4 class="title">• slice</h4>
-                    <article>
-                        .slice(start,end) extrae un nuevo array los valores desde start hasta end -1. (NO MODIFICA EL ARRAY ORIGINAL)
-                        <br>
-                    </article> <br>
-                    <code style="margin-left: 1rem; ">
+                    <div style="border-left: solid 2px white; margin-left: 1rem; ">
+                        <div style="margin-left: 1rem;">
+                            <article>
+                                • extrae un nuevo array los valores desde start hasta end -1. (NO MODIFICA EL ARRAY ORIGINAL) .slice(start,end)
+                                <br>
+                            </article> <br>
+                            <code style="margin-left: 1rem; ">
                       let nunbers [1,2,3,4,5,6,7] <br>
                       numbers.slice(2,5)  ->  3,4,5 <br> <br>
+                      </code>
+                        </div>
+                    </div>
                 </div>
-                
-              </div>
-              <h3 class="title" style="margin-left:1rem; ">• Ordenar elementos de un array</h3>
-              <div style="border-left: solid 2px white; margin-left: 2rem; ">
+
+            </div>
+            <h3 class="title" style="margin-left:1rem; ">• Ordenar elementos de un array</h3>
+            <div style="border-left: solid 2px white; margin-left: 2rem; ">
                 <div class="sort" style="margin-left: 1rem; ">
-                  <h4 class="title">• reverse</h4>
-                  <article>
-                      • ordena inversamente el array<br>
-                  </article>
-                  <code style="margin-left: 1rem; ">
+                    <h4 class="title">• reverse</h4>
+                    <article>
+                        • ordena inversamente el array<br>
+                    </article>
+                    <code style="margin-left: 1rem; ">
                     'hola mama'.split('').reverse() -> ('a' 'm' 'a' 'm' '' 'a' 'l' 'o'  'h' )
                   </code>
                     <article>
