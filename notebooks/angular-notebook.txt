@@ -1,47 +1,25 @@
-CURSO ANGULAR 
+# Curso de Angular
 
-- Introduccion (Typescript)
-Las descripciones de los capitulos se encuentran en el archivo app.TS de cada carpeta descritos con un comentario. 
-_____________________________________________________________________
+Platform: Udemy
+Title: Aprende a desarrollar aplicaciones web profesionales en dos semanas (Regalo eBook de Angular).
+Instructor: Pedro Jimenez
 
-cap 10 (Var y Let)
-nota: let funciona de forma que si creamos un let dentro de un loop este se diferencia al creado por fuera, mientras que con var si creamos dos variables tipo var una dentro y una fuera del loop con el mismo nombre las tomaria como una, afectando ambas por igual.
+Notes:
 
-Ejemplo VAR:
-var mensaje = "hola";
-if (true){
-    var mensaje="adios";
-}
-console.log(mensaje); ---------->output = adios
+## Data Biding
 
-Ejemplo LET:
-let mensaje = "hola";
+Union o enlace de datos, sirve para unir datos entre la plantilla html y la clase del componente.
 
-if (true){
-    let mensaje="adiós";
-}
-console.log(mensaje); ---------->output = hola
+Interpolación:
 
-constantes (const) 
-*se declaran en mayuscula como una buena practica
-	Ej const OPCIONES = "todas";
-*al ser creadas obligatoriamente deben ser inicializadas
-*nunca podran ser cambiadas una vez inicializadas
-*tienen un funcionamiento similar al LET con respecto a los loops y otros bloques como funciones.
+## Directivas
 
-_____________________________________________________________________
+Existen directivas estructurales y de estado, las estructurales su sintaxis es *ngFor y se
+emplean para modificar el layout (DOM) mientras que las directivas de estado como [ngClass] utilizan
+una sintaxis de corchetes y modifican visualmente el elemento mas no su composición dentro del DOM.
 
-cap 13 Tipos de variables
-String = cadena de texto
-number = numero entero o decimal
-boolean = booleano (true/false)
-Date = Fecha (mes-dia-ano)
-any = cualquier tipo puede cambiarse su valor en cualquier momento
+Host Biding: clase del core de angular que sirve para enlazar nuestras clases de la plantilla
+con propiedades de la clase del componente desde una directiva personalizada.
 
-sintaxis de un objeto con atributos
-let spiderman = {
-    nombre:"Peter",
-    edad:26
-}
-
- 
+HostListener: clase del core de angular que va a estar escuchando algún evento que se produzca en
+nuestra plantilla, para luego asociarlo a un método de nuestra clase del componente.
