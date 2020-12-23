@@ -86,3 +86,11 @@ HTML
 ``` HTML
   <p> {{ sexo | i18nSelect: encabezamiento }} {{ nombre }} </p>
 ```
+
+### Services
+
+To create a service we use the next code line
+
+``` console
+  ng generate service services/name-service --skipTests=true
+```
